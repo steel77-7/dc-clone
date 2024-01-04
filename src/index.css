@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .sidebar-icon{
+      @apply  flex justify-center items-center relative rounded-full p-3 text-white bg-slate-500 m-2 h-14 w-14 transition-all  ease-linear hover:rounded-3xl hover:bg-blue-600
+  }
+  .tooltip{
+    @apply  absolute left-20 bg-slate-900 text-white p-2 rounded-xl min-w-max  transition-all duration-150 scale-0 origin-left
+  }
+
+  .dm-search-input{
+    caret-color: white;
+    
+    
+   
+  }
 }
