@@ -11,10 +11,6 @@
     @apply  absolute left-20 bg-slate-900 text-white p-2 rounded-xl min-w-max  transition-all duration-150 scale-0 origin-left
   }
 
-  .dm-search-input{
-    caret-color: white;
-    
-    
-   
-  }
+  
+ 
 }
